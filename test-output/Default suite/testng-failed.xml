@@ -5,7 +5,7 @@
     <classes>
       <class name="testcases">
         <methods>
-          <include name="checkhoteltab"/>
+          <include name="checkDate"/>
           <include name="pretesting"/>
           <include name="posttesting"/>
         </methods>

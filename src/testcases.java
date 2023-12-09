@@ -102,8 +102,8 @@ public class testcases {
         
         //Actual return
         String ActualreturnMonth=driver.findElement(By.cssSelector("div[class='sc-OxbzP sc-lnrBVv gKbptE'] span[class='sc-hvvHee cuAEQj']")).getText();
-        int ActualreturnDay=Integer.parseInt(driver.findElement(By.cssSelector("div[class='sc-OxbzP sc-lnrBVv gKbptE'] span[class='sc-fvLVrH hNjEjT']")).getText());
-        String ActualreturnName=driver.findElement(By.cssSelector("div[class='sc-OxbzP sc-lnrBVv gKbptE'] span[class='sc-eSePXt ljMnJa']")).getText();
+        int ActualreturnDay=Integer.parseInt(driver.findElement(By.cssSelector("div[class='sc-OxbzP sc-bYnzgO bojUIa'] span[class='sc-fvLVrH hNjEjT']")).getText());
+        String ActualreturnName=driver.findElement(By.cssSelector("div[class='sc-OxbzP sc-bYnzgO bojUIa'] span[class='sc-eSePXt ljMnJa']")).getText();
         
         //expected
         
@@ -121,10 +121,11 @@ public class testcases {
         
         
         String ExpectedreturnMonth=today.getMonth().getDisplayName(TextStyle.FULL, Locale.ENGLISH);
-        int ExpectedreturnDay=today.plusDays(1).getDayOfMonth();
-        String ExpectedreturnNameDay=today.plusDays(1).getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.ENGLISH);
+        int ExpectedreturnDay=today.plusDays(2).getDayOfMonth();
+        String ExpectedreturnNameDay=today.plusDays(2).getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.ENGLISH);
         assertEquals(ActualreturnMonth,ExpectedreturnMonth);
         assertEquals(ActualreturnDay,ExpectedreturnDay);
+        System.out.println(ExpectedreturnDay);
         assertEquals(ActualreturnName,ExpectedreturnNameDay);
 /*
 		 * int expectedDepatureDate=today.plusDays(1).getDayOfMonth();
