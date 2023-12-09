@@ -92,7 +92,7 @@ public class testcases {
 
 	}
 
-	@Test(enabled = false)
+	@Test()
 	public void checkDate() {
 		LocalDate today = LocalDate.now();
 		//Actual
